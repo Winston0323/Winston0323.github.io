@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3DReconstruction</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>3D Reconstruction</h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="#about">About</a></li>
+			<li><a href="#features">Features</a></li>
+			<li><a href="#team">Team</a></li>
+			<li><a href="#tool">Tools</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<section id="about">
+			<h2>About</h2>
+			<p>While construction officers in the traffic 
+				department trying to detect the integrity 
+				of infrastructures by eyes can be 
+				repetitive and increase human error, 
+				it is possible to use computer vision 
+				and machine learning to replace such 
+				monotonous jobs. In this project we will 
+				detect the integrity and then use models 
+				like NeRF to reconstruct the device within 
+				scenes. And for special instruments, with 
+				data of their models, we can detect their 
+				completeness or construct a scene with it 
+				placed inside a specific location. Such 
+				methods will decrease erroneous detection 
+				and help discover minor defects which are 
+				hard to detect by human eyes or hard to 
+				remember. </p>
+		</section>
+
+		<section id="features">
+			<h2>Features</h2>
+			<ul>                                               
+				<li>Object Detection</li>  
+				<li>Data generation</li>
+					<p>panorama</p>
+					<div class="pano"><img src="Images\1.jpg"></div>
+					<p>skybox</p>
+					<div class="grid">
+						<div class="item"><img src="Images\nx.jpg"></div>
+						<div class="item"><img src="Images\px.jpg"></div>
+						<div class="item"><img src="Images\ny.jpg"></div>
+						<div class="item"><img src="Images\py.jpg"></div>
+						<div class="item"><img src="Images\nz.jpg"></div>
+						<div class="item"><img src="Images\pz.jpg"></div>
+					</div>
+					<p>Unity Reconstruction scene</p>
+					<div class="gif"><img src="Video\skybox.gif"></div>	
+					<p>Movement inside scene</p>
+					<div class="gif"><img src="Video\movement.gif"></div>		
+
+				<li>Parametric scenereconstruction</li>
+				<div class="gif"><img src="Video\placeobject.gif"></div>
+				
+			</ul>
+		</section>
+
+		<section id="team">
+			<h2>Team</h2>
+			<ul>
+				<li>Cheng Niu</li>
+				<li>Zixi Liu</li>
+			</ul>
+		</section>
+
+		<section id="tool">
+			<h2>Tools</h2>
+			<li>Panorama2Skybox: <a href=https://github.com/Winston0323/Panorama2Skybox.git>https://github.com/Winston0323/Panorama2Skybox.git</a></li>
+		</section>
+	</main>
+
+</body>
+</html>
