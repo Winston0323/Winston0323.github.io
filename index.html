@@ -1,91 +1,261 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>3DReconstruction</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3D Reconstruction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<header>
-		<h1>3D Reconstruction</h1>
-	</header>
+<header>
+    <h1>3D Reconstruction</h1>
+</header>
 
-	<nav>
-		<ul>
-			<li><a href="#about">About</a></li>
-			<li><a href="#features">Features</a></li>
-			<li><a href="#team">Team</a></li>
-			<li><a href="#future">Future Work</a></li>
-			<li><a href="#tool">Tools</a></li>
-		</ul>
-	</nav>
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#future">Future Work</a></li>
+        <li><a href="#tool">Tools</a></li>
+    </ul>
+</nav>
 
-	<main>
-		<section id="about">
-			<h2>About</h2>
-			<p>While construction officers in the traffic 
-				department trying to detect the integrity 
-				of infrastructures by eyes can be 
-				repetitive and increase human error, 
-				it is possible to use computer vision 
-				and machine learning to replace such 
-				monotonous jobs. In this project we will 
-				detect the integrity and then use models 
-				like NeRF to reconstruct the device within 
-				scenes. And for special instruments, with 
-				data of their models, we can detect their 
-				completeness or construct a scene with it 
-				placed inside a specific location. Such 
-				methods will decrease erroneous detection 
-				and help discover minor defects which are 
-				hard to detect by human eyes or hard to 
-				remember. </p>
-		</section>
+<main>
+    <section id="about">
+        <h2>About</h2>
+        <p>While construction officers in the traffic
+            department trying to detect the integrity
+            of infrastructures by eyes can be
+            repetitive and increase human error,
+            it is possible to use computer vision
+            and machine learning to replace such
+            monotonous jobs. In this project we will
+            detect the integrity and then use models
+            like NeRF to reconstruct the device within
+            scenes. And for special instruments, with
+            data of their models, we can detect their
+            completeness or construct a scene with it
+            placed inside a specific location. Such
+            methods will decrease erroneous detection
+            and help discover minor defects which are
+            hard to detect by human eyes or hard to
+            remember. </p>
+    </section>
 
-		<section id="features">
-			<h2>Features</h2>
-			<ul>                                               
-				<li>Object Detection</li>  
-				<li>Data generation</li>
-					<p>panorama</p>
-					<div class="pano"><img src="Images\1.jpg"></div>
-					<p>skybox</p>
-					<div class="grid">
-						<div class="item"><img src="Images\nx.jpg"></div>
-						<div class="item"><img src="Images\px.jpg"></div>
-						<div class="item"><img src="Images\ny.jpg"></div>
-						<div class="item"><img src="Images\py.jpg"></div>
-						<div class="item"><img src="Images\nz.jpg"></div>
-						<div class="item"><img src="Images\pz.jpg"></div>
-					</div>
-					<p>Unity Reconstruction scene</p>
-					<div class="gif"><img src="Video\skybox.gif"></div>	
-	
-				<li>Parametric scenereconstruction</li>
-				<div class="gif"><img src="Video\placeobject.gif"></div>
-				<p>Movement inside scene</p>
-				<div class="gif"><img src="Video\movement.gif"></div>	
-				
-			</ul>
-		</section>
+    <section id="features">
+        <h2>Features</h2>
+        <h3>Object Detection</h3>
+        <h4>Transform</h4>
+        Transform all paranomas into several normal pictures without losing information.
+        <h5>Panorama</h5>
 
-		<section id="team">
-			<h2>Team</h2>
-			<ul>
-				<li>Cheng Niu</li>
-				<li>Zixi Liu</li>
-			</ul>
-		</section>
-		<section id="future">
-			<h2>Tools</h2>
-			<li>Panorama2Skybox: <a href=https://github.com/Winston0323/Panorama2Skybox.git>https://github.com/Winston0323/Panorama2Skybox.git</a></li>
-		</section>
-		<section id="tool">
-			<h2>Future Work</h2>
-			<li>Determine depth of in panorama: <a href=https://jiawangbian.github.io/sc_depth_pl>https://jiawangbian.github.io/sc_depth_pl</a></li>
-			<li>Reconstruction from image to 3D model: <a href=https://github.com/KAIST-VCLAB/EgocentricReconstruction>https://github.com/KAIST-VCLAB/EgocentricReconstruction</a></li>
-			<li>Use houdini to make parametric model</li>
-		</section>
-	</main>
+        <div class="row">
+            <div class="col">
+                <img class="img-fluid" src="Images/trans/00006.jpg">
+            </div>
+        </div>
+        <h5>Trans result</h5>
+        <div class="row">
+            <div class="col">
+                <img class="img-fluid" src="Images/trans/1.jpg">
+            </div>
+            <div class="col">
+                <img class="img-fluid" src="Images/trans/2.jpg">
+            </div>
+            <div class="col">
+                <img class="img-fluid" src="Images/trans/3.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="img-fluid" src="Images/trans/4.jpg">
+            </div>
+            <div class="col">
+                <img class="img-fluid" src="Images/trans/5.jpg">
+            </div>
+            <div class="col">
+                <img class="img-fluid" src="Images/trans/6.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="img-fluid" src="Images/trans/7.jpg">
+            </div>
+            <div class="col">
+                <img class="img-fluid" src="Images/trans/8.jpg">
+            </div>
+            <div class="col">
+                <img class="img-fluid" src="Images/trans/9.jpg">
+            </div>
+        </div>
+        <h4>Model Evaluation</h4>
+        Test various of pre-trained model for categories of traffic signs.
+        <ul class="list-group">
+            <li class="list-group-item"><a href=https://github.com/Winston0323/Panorama2Skybox.git>https://github.com/Winston0323/Panorama2Skybox.git</a>Yolo v8 in COCO</li>
+            <li class="list-group-item">Yolo v5 in GTSDB</li>
+            <li class="list-group-item">Retina Net</li>
+            <li class="list-group-item">Retina Net with TT100K</li>
+        </ul>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Sign</th>
+                <th>Total Number</th>
+                <th>YOLO V8 in COCO</th>
+                <th>YOLO V5 in GTSDB</th>
+                <th>Retina Net</th>
+                <th>Retina Net in TT100K</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><img src="Images/signs/do-not-enter.png" alt="Sign 1" width="50" height="50"></td>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td><img src="Images/signs/green.png" alt="Sign 2" width="50" height="50"></td>
+                <td>14</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td><img src="Images/signs/yellow.png" alt="Sign 3" width="50" height="50"></td>
+                <td>12</td>
+                <td>0</td>
+                <td>7</td>
+                <td>11 (2 not full cover)</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td><img src="Images/signs/white.png" alt="Sign 3" width="50" height="50"></td>
+                <td>9</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td><img src="Images/signs/white-group.png" alt="Sign 3" width="50" height="50"></td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+
+            <tr>
+                <td><img src="Images/signs/red-trangile.png" alt="Sign 3" width="50" height="50"></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td><img src="Images/signs/yellow-rect.png" alt="Sign 3" width="50" height="50"></td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td><img src="Images/signs/blue-rect.png" alt="Sign 3" width="50" height="50"></td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h4>Detection Results</h4>
+        <h5>Good Detection</h5>
+        <div class="row">
+            <div class="col">
+                <img class="img-fluid" src="Images/result/retina/1.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="img-fluid" src="Images/result/retina/2.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="img-fluid" src="Images/result/retina/3.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="img-fluid" src="Images/result/retina/4.png">
+            </div>
+        </div>
+        <h5>Not full coverage</h5>
+
+        <div class="row">
+            <div class="col">
+                <img class="img-fluid" src="Images/result/retina/w_1.png">
+            </div>
+        </div>
+
+        <h3>Data generation</h3>
+        <p>panorama</p>
+        <div class="pano"><img src="Images\1.jpg"></div>
+        <p>skybox</p>
+        <div class="grid">
+            <div class="item"><img src="Images\nx.jpg"></div>
+            <div class="item"><img src="Images\px.jpg"></div>
+            <div class="item"><img src="Images\ny.jpg"></div>
+            <div class="item"><img src="Images\py.jpg"></div>
+            <div class="item"><img src="Images\nz.jpg"></div>
+            <div class="item"><img src="Images\pz.jpg"></div>
+        </div>
+        <p>Unity Reconstruction scene</p>
+        <div class="gif"><img src="Video\skybox.gif"></div>
+
+        <li>Parametric scenereconstruction</li>
+        <div class="gif"><img src="Video\placeobject.gif"></div>
+        <p>Movement inside scene</p>
+        <div class="gif"><img src="Video\movement.gif"></div>
+    </section>
+
+    <section id="team">
+        <h2>Team</h2>
+        <ul>
+            <li>Cheng Niu</li>
+            <li>Zixi Liu</li>
+        </ul>
+    </section>
+    <section id="future">
+        <h2>Tools</h2>
+        <li>Panorama2Skybox: <a href=https://github.com/Winston0323/Panorama2Skybox.git>https://github.com/Winston0323/Panorama2Skybox.git</a>
+        </li>
+    </section>
+    <section id="tool">
+        <h2>Future Work</h2>
+        <li>Determine depth of in panorama: <a href=https://jiawangbian.github.io/sc_depth_pl>https://jiawangbian.github.io/sc_depth_pl</a>
+        </li>
+        <li>Reconstruction from image to 3D model: <a href=https://github.com/KAIST-VCLAB/EgocentricReconstruction>https://github.com/KAIST-VCLAB/EgocentricReconstruction</a>
+        </li>
+        <li>Use houdini to make parametric model</li>
+    </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 
 </body>
 </html>
