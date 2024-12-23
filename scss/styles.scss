@@ -526,6 +526,7 @@ footer {
         font-weight: 300;
         color: #7e8890;
         margin: 0 0 15px 0;
+        text-align: left;
     }
 
     p {
@@ -611,6 +612,7 @@ footer {
         clear: both;
         font-weight: 500;
         margin: 0 0 15px 0;
+        text-align: left
     }
 
     p, ul {
@@ -666,12 +668,14 @@ footer {
         font-weight: 300;
         color: $heading;
         margin: 0 0 15px 0;
+        text-align: left;
     }
 
     p {
         color: $text;
         margin: 0 0 15px 0;
         font-size: 0.9em;
+        text-align: left;
     }
 }
 
@@ -822,6 +826,7 @@ footer {
         clear: both;
         font-weight: 500;
         margin: 0 0 15px 0;
+        text-align: left
     }
 
     p, ul {
