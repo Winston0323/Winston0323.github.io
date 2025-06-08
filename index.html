@@ -24,32 +24,34 @@
             <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
         </div>
         <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+        <li>
+            <a href="#about"><span class="lang" data-en="About" data-zh="简介">About</span></a>
+        </li>
+        <li>
+            <a href="#experience"><span class="lang" data-en="Experience" data-zh="行业经验">Experience</span></a>
+        </li>
+        <li>
+            <a href="#education"><span class="lang" data-en="Education" data-zh="学历">Education</span></a>
+        </li>
+        <li>
+            <a href="#projects"><span class="lang" data-en="Projects" data-zh="项目经验">Projects</span></a>
+        </li>
+        <li>
+            <a href="#skills"><span class="lang" data-en="Skills" data-zh="技能">Skills</span></a>
+        </li>
+        <li>
+            <a href="#contact"><span class="lang" data-en="Contact" data-zh="联系方式">Contact</span></a>
+        </li>
+        <li><button id="lang-toggle">切换中文</button></li>
+            
         </ul>
     </header>
     <!-- End header -->
 
     <div id="lead">
         <div id="lead-content">
-            <h1>Zixi Liu</h1>
-            <h2>Graphics Software Engineer</h2>
+            <h1><span class="lang" data-en="Zixi Liu" data-zh="刘子熙">Zixi Liu</span></h1>
+            <h2><span class="lang" data-en="Graphics Software Engineer" data-zh="图形软件工程师">Graphics Software Engineer</span></h2>
         </div>
         <!-- End #lead-content -->
 
@@ -68,14 +70,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
+                    <h2 class="heading"><span class="lang" data-en="About me" data-zh="个人简介">About me</span></h2>
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Howdy!
-                        I am a recent graduate with a Master’s degree from Texas A&M University, specializing in Computer Graphics. My areas of interest include, but are not limited to, Physically-Based Simulation, Computer Animation, and Image Processing. In 2024, I spent most of the year as an intern at Intel, contributing to the Intel Graphics Compiler.
-                        
-                        And in my free time, I enjoy building PCs and exploring photography.
+                        <span class="lang"
+                            data-en="Howdy! I am an graduate with a Master’s degree from Texas A&M University and acquired my Bachelor degree at University of California, San Diego, specializing in Computer Graphics. My areas of interest include, but are not limited to, Physically-Based Simulation, Computer Animation, and Image Processing. In 2024, I spent most of the year as an intern at Intel, contributing to the Intel Graphics Compiler. And in my free time, I enjoy building PCs, photography and cooking."
+                            data-zh="你好！我是一名硕士毕业于德州农工大学, 本科毕业于加州大学圣地亚哥分校的学生，我专注于计算机图形学的学习。学术研究兴趣包括但不限于物理的仿真、计算机动画和图像处理。在 2024 年里，我在英特尔担任图形编译器开发实习生。兴趣爱好有组装电脑，摄影，烹饪等。">
+                            Howdy! I am a recent graduate with a Master’s degree from Texas A&M University, specializing in Computer Graphics. My areas of interest include, but are not limited to, Physically-Based Simulation, Computer Animation, and Image Processing. In 2024, I spent most of the year as an intern at Intel, contributing to the Intel Graphics Compiler. And in my free time, I enjoy building PCs and exploring photography.
+                        </span>
                     </p>
                 </div>
             </div>
@@ -84,43 +87,117 @@
     <!-- End #about -->
 
     <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
+        <h2 class="heading">
+            <span class="lang" data-en="Experience" data-zh="行业经验">Experience</span>
+        </h2>
+
         <div id="experience-timeline">
             <div data-date="June 2021 – August 2022">
                 <h3><a href="https://hxi.ucsd.edu/" target="_blank">UCSD Weibel's Lab</a></h3>
-                <h4>Unity Mix Reality Developer</h4>
+                <h4><span class="lang" data-en="Unity Mix Reality Developer" data-zh="Unity MR开发">Unity Mix Reality Developer</span></h4>
                 <ul>
-                    <li>Worked with tech lead to set up web‑based communication system between Oculus and HoloLens for ARTEMIS</li>
+                    <li>
+                        <span class="lang"
+                            data-en="Worked with tech lead to set up web‑based communication system between Oculus and HoloLens for ARTEMIS"
+                            data-zh="与技术负责人合作，为 ARTEMIS 项目搭建了 Oculus 与 HoloLens 之间的通信系统">
+                            Worked with tech lead to set up web‑based communication system between Oculus and HoloLens for ARTEMIS
+                        </span>
+                    </li>
 
-                    <li>Reconstructed patient body into 3D point‑cloud from MKV files with Microsoft Kinect MKV rendering package</li>
+                    <li>
+                        <span class="lang"
+                            data-en="Reconstructed patient body into 3D point‑cloud from MKV files with Microsoft Kinect MKV rendering package"
+                            data-zh="使用 Microsoft Kinect 的 MKV 渲染工具包，从 MKV 文件中提取颜色，深度信息，将患者身体重建为三维点云">
+                            Reconstructed patient body into 3D point‑cloud from MKV files with Microsoft Kinect MKV rendering package
+                        </span>
+                    </li>
 
-                    <li>Implemented a MKV2PointCloud Converter that convert video shot by Kinect into Unity PointCloud</li>
+                    <li>
+                        <span class="lang"
+                            data-en="Create a camera filtering tool that can seperate RGB channel and apply filter on seperate channel"
+                            data-zh="制作了一个可以分离RGB通道的相机工具，并且可以在通道上应用滤镜">
+                            Create a camera filtering tool that can seperate RGB channel and apply filter on seperate channel
+                        </span>
+                    </li>
                 </ul>
             </div>
 
             <div data-date="January 2023 – January 2024">
                 <h3><a href="https://people.tamu.edu/~xinli/IGVC/IGVCindex.htm" target="_blank">TAMU IGVC LAB</a></h3>
-                <h4>Research Assistant/Unity Developer</h4>
+                <h4>
+                    <span class="lang" data-en="Research Assistant/Unity Developer" data-zh="研究助理 / Unity 开发者">
+                        Research Assistant/Unity Developer
+                    </span>
+                </h4>
                 <ul>
-                    <li>Developed Data generating tools that can produce training data with scenes and object for
-                    ML models, which increase accuracy of ML model on recognition</li>
-                    <li>Develope python tools and continuously communicate with ML model trainer to actively publish new feature releases on current tools</li>
-                    <li>Install 10+ machine learning equipment and NAS, and continuously maintain develope environment</li>
+                    <li>
+                        <span class="lang"
+                            data-en="Developed Data generating tools that can produce training data with scenes and object for ML models, which increase accuracy of ML model on recognition"
+                            data-zh="开发了一个数据生成工具，可生成包含场景和物体的训练数据，提高机器学习模型在识别任务中的准确率">
+                            Developed Data generating tools that can produce training data with scenes and object for ML models, which increase accuracy of ML model on recognition
+                        </span>
+                    </li>
+                    <li>
+                        <span class="lang"
+                            data-en="Develope python tools and continuously communicate with ML model trainer to actively publish new feature releases on current tools"
+                            data-zh="与模型训练者持续沟通，开发 Python 工具并应要求积极更新更多功能">
+                            Develope python tools and continuously communicate with ML model trainer to actively publish new feature releases on current tools
+                        </span>
+                    </li>
+                    <li>
+                        <span class="lang"
+                            data-en="Install 10+ machine learning equipment and NAS, and continuously maintain develope environment"
+                            data-zh="安装了10+机器学习设备和NAS，并持续维护开发环境">
+                            Install 10+ machine learning equipment and NAS, and continuously maintain develope environment
+                        </span>
+                    </li>
                 </ul>
-
             </div>
 
             <div data-date="January 2024 – December 2024">
-                <h3>Intel Coorportation</h3>
-                <h4>Graduate Software Developer</h4>
+            <h3>
+                <span class="lang" data-en="Intel Coorportation" data-zh="英特尔公司">
+                    Intel Coorportation
+                </span>
+            </h3>
 
-                <ul>   
-                <li>Implemented and maintain features like register keys, retracing for Intel Graphics Compiler with user mode driver,
-                and continuously collaborate with validation team for debugging games and creating test cases</li>
-                <li>Developed an automated script that compile shaders and gather data which helped pushing architecture change</li>
-                <li>Developed a tool in Python to compare difference between LLVM IR, streamlining LLVM development process</li>
-                <li>Maintain and optimize Cmake for IGC repository, increase efficiency in build time and space by reusing target</li>
-                </ul>
+            <h4>
+                <span class="lang" data-en="Graduate Software Developer" data-zh="研究生软件开发工程师">
+                    Graduate Software Developer
+                </span>
+            </h4>
+
+            <ul>
+                <li>
+                    <span class="lang"
+                        data-en="Implemented and maintain features like environment value and register keys, retracing for Intel Graphics Compiler with user mode driver, and continuously collaborate with validation team for debugging games and creating test cases"
+                        data-zh="实现并维护 Intel 图形编译器中与用户模式驱动相关的功能，如环境变量，并持续与检测团队合作调试驱动和创建测试用例">
+                        Implemented and maintain features like environment value and register keys, retracing for Intel Graphics Compiler with user mode driver, and continuously collaborate with validation team for debugging games and creating test cases
+                    </span>
+                </li>
+                <li>
+                    <span class="lang"
+                        data-en="Developed an automated script that compile shaders and gather data which helped pushing architecture change"
+                        data-zh="开发自动化脚本以编译着色器并收集数据，推进物理架构改进">
+                        Developed an automated script that compile shaders and gather data which helped pushing architecture change
+                    </span>
+                </li>
+                <li>
+                    <span class="lang"
+                        data-en="Developed a tool in Python to compare difference between LLVM IR, streamlining LLVM development process"
+                        data-zh="开发了用于比较 LLVM IR差异的 Python 工具，从而优化 LLVM 的开发流程">
+                        Developed a tool in Python to compare difference between LLVM IR, streamlining LLVM development process
+                    </span>
+                </li>
+                <li>
+                    <span class="lang"
+                        data-en="Maintain and optimize Cmake for IGC repository, increase efficiency in build time and space by reusing target"
+                        data-zh="维护并优化 IGC 仓库中的 CMake 脚本，通过复用构建目标提高构建时间和空间的效率">
+                        Maintain and optimize Cmake for IGC repository, increase efficiency in build time and space by reusing target
+                    </span>
+                </li>
+            </ul>
+
 
             </div>
         </div>
@@ -128,32 +205,53 @@
     <!-- End #experience -->
 
     <div id="education">
-        <h2 class="heading">Education</h2>
+        <h2 class="heading">
+            <span class="lang" data-en="Education" data-zh="教育背景">Education</span>
+        </h2>
+
         <div class="education-block">
-            <h3>University of California San Diego</h3>
+            <h3>
+                <span class="lang" data-en="University of California San Diego" data-zh="加州大学圣地亚哥分校">University of California San Diego</span>
+            </h3>
             <span class="education-date">Sep 2018 - Jun 2022</span>
-            <h4>Bachelor of Science in Computer Science</h4>
+            <h4>
+                <span class="lang" data-en="Bachelor of Science in Computer Science" data-zh="计算机科学学士学位">Bachelor of Science in Computer Science</span>
+            </h4>
             <p>
-                Relative Course: Image processing, Physical Based modeling, Software Engineering, OS, Computer Animation, Cuda Programming
+                <span class="lang"
+                    data-en="Relative Course: Image processing, Physical Based modeling, Software Engineering, OS, Computer Animation, Cuda Programming"
+                    data-zh="相关课程：图像处理、基于物理的建模、软件工程、操作系统、计算机动画、CUDA 编程">
+                    Relative Course: Image processing, Physical Based modeling, Software Engineering, OS, Computer Animation, Cuda Programming
+                </span>
             </p>
         </div>
         <!-- End .education-block -->
 
         <div class="education-block">
-            <h3>Texas A&M University</h3>
+            <h3>
+                <span class="lang" data-en="Texas A&M University" data-zh="德克萨斯农工大学">Texas A&M University</span>
+            </h3>
             <span class="education-date">Aug 2022 - Dec 2024</span>
-            <h4>Bachelor of Science in Computer Science</h4>
+            <h4>
+                <span class="lang" data-en="Bachelor of Science in Computer Science" data-zh="计算机科学硕士学位">Bachelor of Science in Computer Science</span>
+            </h4>
             <p>
-                Relevant Courses: Software Engineering, Data Structure, Computer Graphic, Image Processing, Operating
-system, Computer Architecture, Parallel Computing, Virtual Reality Development, Human Computer Interaction
+                <span class="lang"
+                    data-en="Relevant Courses: Software Engineering, Data Structure, Computer Graphic, Image Processing, Operating system, Computer Architecture, Parallel Computing, Virtual Reality Development, Human Computer Interaction"
+                    data-zh="相关课程：软件工程、数据结构、计算机图形学、图像处理、操作系统、计算机体系结构、并行计算、虚拟现实开发、人机交互">
+                    Relevant Courses: Software Engineering, Data Structure, Computer Graphic, Image Processing, Operating system, Computer Architecture, Parallel Computing, Virtual Reality Development, Human Computer Interaction
+                </span>
             </p>
         </div>
         <!-- End .education-block -->
     </div>
     <!-- End #education -->
 
+
     <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
+    <h2 class="heading">
+        <span class="lang" data-en="Projects" data-zh="项目经验">Projects</span>
+    </h2>
         <div class="container">
             <div class="row">
                 <div class="project shadow-large">
@@ -162,13 +260,20 @@ system, Computer Architecture, Parallel Computing, Virtual Reality Development, 
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Traffic Sign Generator</h3>
-                        <p>
+                    <h3>
+                        <span class="lang" data-en="Traffic Sign Generator" data-zh="交通标志生成器">Traffic Sign Generator</span>
+                    </h3>
+                    <p>
+                        <span class="lang"
+                            data-en="This is a tool for creating images for training, especially for YOLO. It will create image with a traffic sign inside your customized Skybox. You can use the dataset to train your Model, or use it as an augment dataset for the training."
+                            data-zh="这是一个用于生成训练图像的工具，特别适用于 YOLO。它会在自定义的天空盒中生成带有交通标志的图像。你可以使用该数据集训练模型，或作为增强数据集进行训练。">
                             This is a tool for creating images for training, especially for YOLO. 
                             It will create image with a traffic sign inside your customized Skybox. 
                             You can use the dataset to train your Model, or use it as an augment dataset for the training.
-                        </p>
-                        <a href="https://github.com/Winston0323/SignDataGenerator">View Project</a>
+                        </span>
+                    </p>
+
+                        <a href="https://github.com/Winston0323/SignDataGenerator"><span class="lang" data-en="View Project" data-zh="查看项目">View Project</span></a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -179,14 +284,19 @@ system, Computer Architecture, Parallel Computing, Virtual Reality Development, 
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>CAVE System </h3>
+                        <h3>
+                            <span class="lang" data-en="CAVE System" data-zh="CAVE 系统">CAVE System</span>
+                        </h3>
                         <p>
-                            This is a replication of the original <a href="https://en.wikipedia.org/wiki/Cave_automatic_virtual_environment">CAVE</a> system in VR implemented with unity for oculus. 
-                            It will allow the oculus headset as the main viewer, or you can transmit the onwership to your controller.
-                            You can also freeze the image and draw debug line to see where CAVE system is tracking movement.
-
+                            <span class="lang"
+                                data-en='This is a replication of the original <a href="https://en.wikipedia.org/wiki/Cave_automatic_virtual_environment">CAVE</a> system in VR implemented with unity for oculus. It will allow the oculus headset as the main viewer, or you can transmit the onwership to your controller. You can also freeze the image and draw debug line to see where CAVE system is tracking movement.'
+                                data-zh='这是对原始 <a href="https://en.wikipedia.org/wiki/Cave_automatic_virtual_environment">CAVE</a> 系统的 VR 复制版本，用 Unity 在 Oculus 上实现。你可以使用 Oculus 头显作为主要视角，或将控制权传递给控制器。你还可以冻结图像并绘制调试线来查看 CAVE 系统的追踪情况。'>
+                                This is a replication of the original <a href="https://en.wikipedia.org/wiki/Cave_automatic_virtual_environment">CAVE</a> system in VR implemented with unity for oculus. 
+                                It will allow the oculus headset as the main viewer, or you can transmit the onwership to your controller.
+                                You can also freeze the image and draw debug line to see where CAVE system is tracking movement.
+                            </span>
                         </p>
-                        <a href="https://github.com/Winston0323/CAVE_SYSTEM">View Project</a>
+                        <a href="https://github.com/Winston0323/CAVE_SYSTEM"><span class="lang" data-en="View Project" data-zh="查看项目">View Project</span></a>
                     </div>
                     <!-- End .project-info -->
                      
@@ -199,15 +309,28 @@ system, Computer Architecture, Parallel Computing, Virtual Reality Development, 
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Wrack a Mutant</h3>
+                        <h3>
+                            <span class="lang" data-en="Wrack a Mutant" data-zh="击败变异体">Wrack a Mutant</span>
+                        </h3>
+
                         <p>
-                            This is a small game.
-                            Kill the mutating virus with your antibody in hand!
+                            <span class="lang"
+                                data-en="This is a small game." 
+                                data-zh="这是一个小型游戏。">
+                                This is a small game.
+                            </span>
                         </p>
+
                         <p>
+                            <span class="lang"
+                                data-en="Kill the mutating virus with your antibody in hand!"
+                                data-zh="用你手中的抗体击败正在变异的病毒吧！">
+                                Kill the mutating virus with your antibody in hand!
+                            </span>
+                        </p>
                             <a href="https://winston0323.github.io/wreck_a_mutant/">Go Play Game</a>  
                         </p>
-                        <a href="https://github.com/Winston0323/wreck_a_mutant">View Project</a>
+                        <a href="https://github.com/Winston0323/wreck_a_mutant"><span class="lang" data-en="View Project" data-zh="查看项目">View Project</span></a>
 
                         
 
@@ -222,14 +345,22 @@ system, Computer Architecture, Parallel Computing, Virtual Reality Development, 
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>3D PinBall Machine</h3>
+                        <h3>
+                            <span class="lang" data-en="3D PinBall Machine" data-zh="3D 弹珠机">3D PinBall Machine</span>
+                        </h3>
+
                         <p>
-                            This is a pinball machine that have a fully functional physically based engine. 
-                            It utilized RK4 intergration which can handle close objects, moving object with still object,  moving object with moving object collision.
-                            The wall beside two paddle boards are changed into portals.
-                            Ball goes into one wall will come out in the other one.
+                            <span class="lang"
+                                data-en="This is a pinball machine that have a fully functional physically based engine. It utilized RK4 intergration，PBD and Cotinuous Collision Detection which can handle close objects, moving object with still object, moving object with moving object collision. The wall beside two paddle boards are changed into portals. Ball goes into one wall will come out in the other one."
+                                data-zh="这是一个具有完整物理引擎的弹珠机。它结合了 RK4 积分方法 PBD碰撞检测和连续碰撞检测，可以处理贴近物体的碰撞、运动与静止物体的碰撞、两个运动物体之间的碰撞。两个挡板旁边的墙壁被设置为传送门，球从一个墙壁进入会从另一个墙壁出来。">
+                                This is a pinball machine that have a fully functional physically based engine. 
+                                It utilized RK4 intergration which can handle close objects, moving object with still object,  
+                                moving object with moving object collision.
+                                The wall beside two paddle boards are changed into portals.
+                                Ball goes into one wall will come out in the other one.
+                            </span>
                         </p>
-                        <a href="https://github.com/Winston0323/3DBallCollision">View Project</a>
+                        <a href="https://github.com/Winston0323/3DBallCollision"><span class="lang" data-en="View Project" data-zh="查看项目">View Project</span></a>
                     </div>
                     <!-- End .project-info -->
                      
@@ -242,14 +373,35 @@ system, Computer Architecture, Parallel Computing, Virtual Reality Development, 
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>LOD Generator</h3>
-                        <p>
-                            This is a LOD generator that will generate whatever LOD mesh you enter.
-                            It will also delete edge at real-time.
-                            You can also view the LOD it generate.
+                        <h3>
+                            <span class="lang" data-en="LOD Generator" data-zh="LOD 网格生成器">LOD Generator</span>
+                        </h3>
 
+                        <p>
+                            <span class="lang"
+                                data-en="This is a LOD generator that will generate whatever LOD mesh you enter."
+                                data-zh="这是一个 LOD 网格生成器，可以生成你输入的任意 LOD 网格。">
+                                This is a LOD generator that will generate whatever LOD mesh you enter.
+                            </span>
                         </p>
-                        <a href="https://github.com/Winston0323/LOD_Generator">View Project</a>
+
+                        <p>
+                            <span class="lang"
+                                data-en="It will also delete edge at real-time."
+                                data-zh="它支持实时边缘删除。">
+                                It will also delete edge at real-time.
+                            </span>
+                        </p>
+
+                        <p>
+                            <span class="lang"
+                                data-en="You can also view the LOD it generate."
+                                data-zh="你还可以查看它生成的不同层级模型。">
+                                You can also view the LOD it generate.
+                            </span>
+                        </p>
+
+                        <a href="https://github.com/Winston0323/LOD_Generator"><span class="lang" data-en="View Project" data-zh="查看项目">View Project</span></a>
                     </div>
                     <!-- End .project-info -->
                      
@@ -262,20 +414,52 @@ system, Computer Architecture, Parallel Computing, Virtual Reality Development, 
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>RK4 Spring-Damper Cloth Simulation </h3>
+                        <h3>
+                            <span class="lang" data-en="RK4 Spring-Damper Cloth Simulation" data-zh="RK4 弹簧阻尼布料模拟">
+                                RK4 Spring-Damper Cloth Simulation
+                            </span>
+                        </h3>
+
                         <p>
-                            This Spring damper simulation allow you to compare between Eular and RK4 intergration method.
-
-                            It will also allow you to try different spring connection.
-
-                            And change parameters like k constants.
-
-                            You can adjust an environment wind direction by changing the xyz value.
-
-                            Collision between wall is implemented.
-
+                            <span class="lang"
+                                data-en="This Spring damper simulation allow you to compare between Eular and RK4 intergration method."
+                                data-zh="这个弹簧阻尼模型的布料模拟系统可以让你对比 Euler 方法与 RK4 积分方法的差异。">
+                                This Spring damper simulation allow you to compare between Eular and RK4 intergration method.
+                            </span>
                         </p>
-                        <a href="https://github.com/Winston0323/Cloth_Simulation">View Project</a>
+
+                        <p>
+                            <span class="lang"
+                                data-en="It will also allow you to try different spring connection."
+                                data-zh="支持不同的弹簧连接方式。">
+                                It will also allow you to try different spring connection.
+                            </span>
+                        </p>
+
+                        <p>
+                            <span class="lang"
+                                data-en="And change parameters like k constants."
+                                data-zh="可调节参数，如弹簧系数 k。">
+                                And change parameters like k constants.
+                            </span>
+                        </p>
+
+                        <p>
+                            <span class="lang"
+                                data-en="You can adjust an environment wind direction by changing the xyz value."
+                                data-zh="可以通过修改 xyz 值来调整环境风的方向。">
+                                You can adjust an environment wind direction by changing the xyz value.
+                            </span>
+                        </p>
+
+                        <p>
+                            <span class="lang"
+                                data-en="Collision between wall is implemented."
+                                data-zh="实现了与墙面的碰撞检测。">
+                                Collision between wall is implemented.
+                            </span>
+                        </p>
+                        <a href="https://github.com/Winston0323/Cloth_Simulation"><span class="lang" data-en="View Project" data-zh="查看项目">View Project</span></a>
                     </div>
                     <!-- End .project-info -->
                      
@@ -285,8 +469,10 @@ system, Computer Architecture, Parallel Computing, Virtual Reality Development, 
                 <div class="project no-image">
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>OpenGL Math Helper</h3>
-                        <a href="https://github.com/Winston0323/EngineHelper">View Project</a>
+                        <h3>
+                            <span class="lang" data-en="OpenGL Math Helper" data-zh="OpenGL 线代辅助工具">OpenGL Math Helper</span>
+                        </h3>
+                        <a href="https://github.com/Winston0323/EngineHelper"><span class="lang" data-en="View Project" data-zh="查看项目">View Project</span></a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -295,8 +481,35 @@ system, Computer Architecture, Parallel Computing, Virtual Reality Development, 
                 <div class="project no-image">
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>More Project at Github!</h3>
+                        <h3>
+                            <span class="lang" data-en="OpenGL Image Processing Starter Code" data-zh="OpenGL 图像处理入门代码">
+                                OpenGL Image Processing Starter Code
+                            </span>
+                        </h3>
 
+                        <p>
+                            <span class="lang"
+                                data-en="This project is a starter code for OpenGL image processing. We use fragment shader to parallel computing the kernel. Modify the fragment shader as you wish and it will render the image for you."
+                                data-zh="这是一个用于 OpenGL 图像处理的入门代码。我们使用片段着色器对卷积核进行并行计算。你可以根据需要修改片段着色器，它会将图像渲染出来。">
+                                This project is a starter code for OpenGL image processing.
+                                We use fragment shader to parallel computing the kernel. 
+                                Modify the fragment shader as you wish and it will render the image for you.
+                            </span>
+                        </p>
+                        <a href="https://github.com/Winston0323/OpenGL_image_processing_starter.git"><span class="lang" data-en="View Project" data-zh="查看项目">View Project</span></a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project no-image">
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>
+                            <span class="lang" data-en="More Project at Github!" data-zh="更多项目请见 Github！">
+                                More Project at Github!
+                            </span>
+                        </h3>
                         <a href="https://github.com/Winston0323">Go to Github</a>
                     </div>
                     <!-- End .project-info -->
@@ -368,6 +581,21 @@ system, Computer Architecture, Parallel Computing, Virtual Reality Development, 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    <!-- Language toggle script -->
+    <script>
+        let currentLang = 'en';
+        window.onload = function () {
+            const langToggle = document.getElementById('lang-toggle');
+            langToggle.addEventListener('click', function () {
+                currentLang = currentLang === 'en' ? 'zh' : 'en';
+                this.textContent = currentLang === 'en' ? '切换中文' : 'Switch to English';
+                document.querySelectorAll('.lang').forEach(el => {
+                    el.innerHTML = el.getAttribute('data-' + currentLang);
+                });
+            });
+        };
+    </script>
+
 </body>
 
 </html>

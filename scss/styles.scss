@@ -591,57 +591,49 @@ footer {
 .education-block {
     max-width: 700px;
     margin: 0 auto 30px auto;
-    padding: 15px;
+    padding: 20px;
     border: 1px solid $border;
     text-align: left;
 
-    h3 {
-        font-weight: 500;
-        float: left;
-        margin: 0;
-        color: $heading;
-    }
+    .education-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 5px;
 
-    span {
-        color: $text;
-        float: right;
+        h3 {
+            font-weight: 500;
+            margin: 0;
+            color: $heading;
+        }
+
+        .education-date {
+            color: $text;
+            white-space: nowrap;
+        }
     }
 
     h4 {
         color: $text;
-        clear: both;
         font-weight: 500;
         margin: 0 0 15px 0;
-        text-align: left
     }
 
-    p, ul {
+    p {
         margin: 0;
         color: $text;
         font-size: 0.9em;
-    }
-
-    ul {
-        padding: 0 0 0 15px;
+        line-height: 1.6;
+        word-break: break-word;
     }
 }
+
 
 /*
     -------------------------------
     ----- 8. Project Styles -----
     -------------------------------
 */
-
-#projects {
-    padding: 50px 15px;
-    border-bottom: 1px solid $border;
-    text-align: center;
-
-    h2 {
-        color: $heading;
-        margin-bottom: 50px;
-    }
-}
 
 .project {
     position: relative;
@@ -692,6 +684,7 @@ footer {
     display: none;
 }
 
+/*
 /*
     -------------------------------
     ----- 9. Skills Styles -----
